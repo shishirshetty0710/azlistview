@@ -117,7 +117,7 @@ class IndexBarOptions {
     this.downColor,
     this.decoration,
     this.downDecoration,
-    this.textStyle = const TextStyle(fontSize: 13, color: Color(0xFF3CB372)),
+    this.textStyle = const TextStyle(fontSize: 20, color: Color(0xFF3CB372)),
     this.downTextStyle,
     this.selectTextStyle,
     this.downItemDecoration,
