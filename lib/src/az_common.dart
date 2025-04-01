@@ -10,17 +10,33 @@ class SuspensionUtil {
   /// sort list by suspension tag.
   /// 根据[A-Z]排序。
   static void sortListBySuspensionTag(List<ISuspensionBean>? list) {
-    if (list == null || list.isEmpty) return;
-    list.sort((a, b) {
-      if (a.getSuspensionTag() == "@" || b.getSuspensionTag() == "#") {
+  if (list == null || list.isEmpty) return;
+  list.sort((a, b) {
+    String tagA = a.getSuspensionTag();
+    String tagB = b.getSuspensionTag();
+
+    // Check if tags are numeric
+    bool isTagANumeric = double.tryParse(tagA) != null;
+    bool isTagBNumeric = double.tryParse(tagB) != null;
+
+    if (isTagANumeric && !isTagBNumeric) {
+      return -1; // Numbers come before alphabets
+    } else if (!isTagANumeric && isTagBNumeric) {
+      return 1; // Alphabets come after numbers
+    } else if (isTagANumeric && isTagBNumeric) {
+      return double.parse(tagA).compareTo(double.parse(tagB)); // Compare numbers
+    } else {
+      // Handle special cases for "@" and "#"
+      if (tagA == "@" || tagB == "#") {
         return -1;
-      } else if (a.getSuspensionTag() == "#" || b.getSuspensionTag() == "@") {
+      } else if (tagA == "#" || tagB == "@") {
         return 1;
       } else {
-        return a.getSuspensionTag().compareTo(b.getSuspensionTag());
+        return tagA.compareTo(tagB); // Compare alphabetically
       }
-    });
-  }
+    }
+  });
+}
 
   /// get index data list by suspension tag.
   /// 获取索引列表。
