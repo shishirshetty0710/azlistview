@@ -78,7 +78,8 @@ const List<String> kIndexBarData = const [
   'W',
   'X',
   'Y',
-  'Z'
+  'Z',
+  '!'
 ];
 
 const double kIndexBarWidth = 30;
