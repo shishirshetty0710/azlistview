@@ -124,6 +124,11 @@ class IndexBarOptions {
     this.selectItemDecoration,
     this.indexHintWidth = 72,
     this.indexHintHeight = 72,
+    this.indexHintDecoration = const BoxDecoration(
+      color: Colors.cyanAccent,
+      shape: BoxShape.rectangle,
+      borderRadius: BorderRadius.all(Radius.circular(6)),
+    ),
     this.indexHintTextStyle =
         const TextStyle(fontSize: 24.0, color: Colors.white),
     this.indexHintChildAlignment = Alignment.center,
