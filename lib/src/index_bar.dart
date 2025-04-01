@@ -130,7 +130,7 @@ class IndexBarOptions {
       borderRadius: BorderRadius.all(Radius.circular(6)),
     ),
     this.indexHintTextStyle =
-        const TextStyle(fontSize: 24.0, color: Colors.white),
+        const TextStyle(fontSize: 24.0, color: Colors.greenAccent),
     this.indexHintChildAlignment = Alignment.center,
     this.indexHintAlignment = Alignment.center,
     this.indexHintPosition,
