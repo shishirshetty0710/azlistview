@@ -81,7 +81,7 @@ const List<String> kIndexBarData = const [
   'Z'
 ];
 
-const double kIndexBarWidth = 30;
+const double kIndexBarWidth = 40;
 
 const double kIndexBarItemHeight = 16;
 
