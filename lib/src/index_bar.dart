@@ -53,7 +53,6 @@ class IndexBarDragDetails {
 ///Default Index data.
 const List<String> kIndexBarData = const [
   '#',
-  'A',
   'B',
   'C',
   'D',
@@ -78,8 +77,7 @@ const List<String> kIndexBarData = const [
   'W',
   'X',
   'Y',
-  'Z',
-  '!'
+  'Z'
 ];
 
 const double kIndexBarWidth = 30;
