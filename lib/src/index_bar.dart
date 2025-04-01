@@ -53,6 +53,7 @@ class IndexBarDragDetails {
 ///Default Index data.
 const List<String> kIndexBarData = const [
   '#',
+  'A',
   'B',
   'C',
   'D',
