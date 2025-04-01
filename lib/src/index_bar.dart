@@ -121,7 +121,7 @@ class IndexBarOptions {
     this.downTextStyle,
     this.selectTextStyle,
     this.downItemDecoration,
-    this.selectItemDecoration,
+    this.selectItemDecoration = const BoxDecoration(shape: BoxShape.circle, color: Colors.blueAccent),
     this.indexHintWidth = 72,
     this.indexHintHeight = 72,
     this.indexHintDecoration = const BoxDecoration(
