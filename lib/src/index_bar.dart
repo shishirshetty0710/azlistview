@@ -127,7 +127,7 @@ class IndexBarOptions {
     this.indexHintDecoration = const BoxDecoration(
       color: Colors.greenAccent,
       shape: BoxShape.rectangle,
-      borderRadius: BorderRadius.all(Radius.circular(6)),
+      borderRadius: BorderRadius.all(Radius.circular(12)),
     ),
     this.indexHintTextStyle =
         const TextStyle(fontSize: 24.0, color: Colors.greenAccent),
