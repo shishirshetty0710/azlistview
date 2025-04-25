@@ -194,8 +194,10 @@ class _AzListViewState extends State<AzListView> {
           padding: widget.padding,
           physics: widget.physics,
         ),
-        Align(
-          alignment: widget.indexBarAlignment,
+        Positioned(
+          top: 0,
+            bottom: 0,
+            right: 0,
           child: IndexBar(
             data: widget.indexBarData,
             width: widget.indexBarWidth,
