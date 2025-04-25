@@ -83,7 +83,7 @@ const List<String> kIndexBarData = const [
 
 const double kIndexBarWidth = 40;
 
-const double kIndexBarItemHeight = 18;
+const double kIndexBarItemHeight = 20;
 
 /// IndexBar options.
 class IndexBarOptions {
